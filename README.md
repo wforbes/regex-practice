@@ -7,4 +7,4 @@ Check out the Regular Expression challenges on [FreeCodeCamp.org](https://freeco
 MDN docs has a great guide for regular expression basics,
 [you can check out here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions).
 
-![screenshot of the app](app-pic.png)
+![screenshot of the app](app-pic.PNG)
