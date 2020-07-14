@@ -26,6 +26,11 @@
 				<Challenge3 />
 			</v-col>
 		</v-row>
+		<v-row class="text-center">
+			<v-col cols="12">
+				<Challenge4 />
+			</v-col>
+		</v-row>
 	</v-container>
 </template>
 
@@ -33,12 +38,14 @@
 	import Challenge1 from './challenges/Challenge1.vue';
 	import Challenge2 from './challenges/Challenge2.vue';
 	import Challenge3 from './challenges/Challenge3.vue';
+	import Challenge4 from './challenges/Challenge4.vue';
 	export default {
 		name: "RegexPractice",
 		components: {
 			Challenge1,
 			Challenge2,
-			Challenge3
+			Challenge3,
+			Challenge4
 		},
 		data() {
 			return {};
