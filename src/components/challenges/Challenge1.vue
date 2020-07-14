@@ -3,7 +3,7 @@
 		<v-row class="text-center">
 			<v-col cols="12">
 				<v-card max-width="800" class="mx-auto pa-4">
-					<h3>Using the Test Method</h3>
+					<h3>#1: Using the Test Method</h3>
 					<a :to="fccUrl" target="_blank">
 						(Found here at FreeCodeCamp.com)
 					</a>
@@ -15,8 +15,8 @@
 						></v-text-field>
 						</v-col>
 						<v-col>
-							<p></p>
-							<p v-html="outputText"></p>
+							<p>Type the word 'Hello in the text field:<br />
+							<p><strong> {{ outputText }} </strong></p>
 						</v-col>
 					</v-row>
 				</v-card>

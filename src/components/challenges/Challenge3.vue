@@ -3,7 +3,7 @@
 		<v-row class="text-center">
 			<v-col cols="12">
 				<v-card max-width="800" class="mx-auto pa-4">
-					<h3>#2: Match Literal Strings</h3>
+					<h3>#3: Match a Literal String with Different Possibilities</h3>
 					<a :to="fccUrl" target="_blank">
 						(Found here at FreeCodeCamp.com)
 					</a>
@@ -11,13 +11,13 @@
 						<v-col>
 						<v-text-field
 							v-model="inputText"
-							placeholder="Type something..."
+							placeholder="Type one or more of the words..."
 						></v-text-field>
 						</v-col>
 						<v-col>
 							<p>
-								Type any portion of this text:<br />
-								<strong>Skateboarding is super fun and I like eggs.</strong>
+								Type one or more of these words:<br />
+								<strong>sometimes, usually, always, never, probably</strong>
 							</p>
 							<p v-html="outputText"></p>
 						</v-col>
@@ -29,11 +29,10 @@
 </template>
 <script>
 	export default {
-		name: "Challenge2",
+		name: "Challenge3",
 		data() {
 			return {
-				fccUrl: "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/regular-expressions/match-literal-strings",
-				sentenceToMatch: "Skateboarding is super fun and I like eggs.",
+				fccUrl: "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/regular-expressions/match-a-literal-string-with-different-possibilities",
 				inputText: "",
 				outputText: ""
 			};
@@ -42,11 +41,11 @@
 			inputText(newVal, oldVal) {
 				if(oldVal !== newVal) {
 					if(newVal !== "") {
-						let regex = new RegExp(newVal);
-						if(regex.test(this.sentenceToMatch)) {
-							this.outputText = "Yes, it contains '"+newVal+"'";
+						let regex = /sometimes|usually|always|never|probably|maybe/;
+						if(regex.test(newVal)) {
+							this.outputText = "Yeah, '"+newVal+"' contains one or more of them.";
 						} else {
-							this.outputText = "Sorry, it doesn't contain '"+newVal+"'";
+							this.outputText = "Nope, '"+newVal+"' doesn't contain any of those words.";
 						}
 					}else {
 						this.outputText = "";
