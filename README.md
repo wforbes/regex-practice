@@ -1,24 +1,10 @@
 # regex-practice
 
-## Project setup
-```
-npm install
-```
+This is just a simple Vue app I made to practice Regular Expressions.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Check out the Regular Expression challenges on [FreeCodeCamp.org](https://freecodecamp.org)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+MDN docs has a great guide for regular expression basics,
+[you can check out here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions).
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![screenshot of the app](app-pic.png)
