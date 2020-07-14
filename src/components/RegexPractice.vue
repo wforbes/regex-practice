@@ -3,12 +3,12 @@
 		<v-row>
 			<v-col align="center">
 				<h1>Regular Expressions Practice</h1>
-				<h5>
+				<h3>
 					Copied from 
 					<a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/regular-expressions">
 						FreeCodeCamp.org Regular Expressions Challenges
 					</a>
-				</h5>
+				</h3>
 			</v-col>
 		</v-row>
 		<v-row class="text-center">
