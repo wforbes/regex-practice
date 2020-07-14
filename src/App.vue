@@ -5,7 +5,11 @@
       color="primary"
       dark
     >
-		<a href="https://wforbes.net/">@wforbes87</a>
+		<v-toolbar-title class="text-subtitle1">
+			<a href="https://github.com/wforbes" target="_blank" style="color:white !important; text-decoration:none;">
+				@wforbes
+			</a>
+		</v-toolbar-title>
     </v-app-bar>
 
     <v-content>
